@@ -21,7 +21,7 @@ function getTime()
     }
 
     clockTitle.innerText = `${
-        (isAfternoon) ? "P.M" : "A.M"
+        (isAfternoon) ? "오후" : "오전"
     } ${
         (hours < 10) ? `0${hours}` : hours
     }:${
