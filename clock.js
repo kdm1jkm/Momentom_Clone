@@ -5,10 +5,24 @@ function getTime()
 {
     const date = new Date();
     const minutes = date.getMinutes();
-    const hours = date.getHours();
+    var hours = date.getHours();
     const seconds = date.getSeconds();
 
+    var isAfternoon;
+
+    if (hours > 12)
+    {
+        isAfternoon = true;
+        hours = hours - 12;
+    }
+    else
+    {
+        isAfternoon = false;
+    }
+
     clockTitle.innerText = `${
+        (isAfternoon) ? "P.M" : "A.M"
+    } ${
         (hours < 10) ? `0${hours}` : hours
     }:${
         (minutes < 10) ? `0${minutes}` : minutes
