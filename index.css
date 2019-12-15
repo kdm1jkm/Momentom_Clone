@@ -98,3 +98,11 @@ input::placeholder
 {
     color: white;
 }
+
+#weather
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
