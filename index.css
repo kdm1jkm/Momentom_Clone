@@ -1,6 +1,12 @@
 body
 {
     color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 .form,
@@ -12,4 +18,83 @@ body
 .showing
 {
     display: block;
+}
+
+.bgImage
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    animation: fadeIn 0.5s linear;
+}
+
+.box *
+{
+    text-align: center;
+}
+
+.box
+{
+    height: 100%;
+}
+
+#blankblock
+{
+    height: 40%;
+}
+
+.clock
+{
+    color: white;
+}
+
+input
+{
+    background: none;
+    border: none;
+    color: white;
+}
+
+input::placeholder
+{
+    color: white;
+}
+
+#tododiv
+{
+    width: 20%;
+    margin-left: 40%;
+}
+
+.js-toDoList{
+    padding: 0;
+}
+
+.js-toDoList li span
+{    
+    color: white;
+}
+
+.js-toDoList li
+{
+    text-align: left;
+}
+
+.js-toDoList li button
+{
+    font-weight: 200;
+    background: none;
+    color: white;
+    border: none;
+    margin-right: 10pt;
+}
+
+.greetings
+{
+    color: white;
 }
